@@ -1,5 +1,7 @@
 # 🍬 Nassau Candy Distributor — Profitability Intelligence Dashboard
 
+App URL := https://appuct-line-profitability-margin-performance-analysis.streamlit.app/
+
 > **Interactive Streamlit + Plotly dashboard for product line profitability and margin performance analysis**
 > Built with Python · Powered by cost structure analytics · Designed for pricing and portfolio strategy
 
@@ -56,13 +58,13 @@ After analyzing **10,194 order transactions** across 15 product SKUs, 3 division
 
 ## 📊 Dashboard Preview
 
-| Tab | Purpose | Key Charts |
-|-----|---------|-----------|
-| 🏆 Product Profitability | Product-level margin and profit analysis | Gross Margin Leaderboard, Sales vs Profit Bubble, Quadrant Scatter, Rankings Bar, Product Classification Cards |
-| 🏭 Division Performance | Division efficiency and regional analysis | Revenue vs Profit Grouped Bar, Violin Distribution, Region×Division Heatmap, Efficiency Quadrant, Division Deep-Dive Cards |
-| 💡 Cost & Margin Diagnostics | Cost structure and pricing intervention | Cost vs Sales Scatter, Cost Structure Quadrant, Pricing Inefficiency Bar, Action Flags Bar, Margin Risk Classification |
-| 📐 Pareto & Concentration | Profit concentration and geographic risk | Profit Pareto, Revenue Pareto, Profit Treemap, Congestion Risk Bar, USA Choropleth Map with City Overlay |
-| 📅 Trend Analysis | Temporal performance patterns | Monthly Revenue/Profit/Margin Dual-Axis, Division Monthly Lines, Margin Heatmap, Quarterly Bar, Top 5 Product Trends |
+| Tab                          | Purpose                                   | Key Charts                                                                                                                 |
+| ---------------------------- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| 🏆 Product Profitability     | Product-level margin and profit analysis  | Gross Margin Leaderboard, Sales vs Profit Bubble, Quadrant Scatter, Rankings Bar, Product Classification Cards             |
+| 🏭 Division Performance      | Division efficiency and regional analysis | Revenue vs Profit Grouped Bar, Violin Distribution, Region×Division Heatmap, Efficiency Quadrant, Division Deep-Dive Cards |
+| 💡 Cost & Margin Diagnostics | Cost structure and pricing intervention   | Cost vs Sales Scatter, Cost Structure Quadrant, Pricing Inefficiency Bar, Action Flags Bar, Margin Risk Classification     |
+| 📐 Pareto & Concentration    | Profit concentration and geographic risk  | Profit Pareto, Revenue Pareto, Profit Treemap, Congestion Risk Bar, USA Choropleth Map with City Overlay                   |
+| 📅 Trend Analysis            | Temporal performance patterns             | Monthly Revenue/Profit/Margin Dual-Axis, Division Monthly Lines, Margin Heatmap, Quarterly Bar, Top 5 Product Trends       |
 
 ---
 
@@ -119,20 +121,20 @@ The dashboard opens at **https://nassaucandyprofitabilityanalysiskushalroxx.stre
 
 ## 🔢 Derived Features
 
-| Column | Description |
-|--------|-------------|
-| `Gross Margin (%)` | Core profitability metric — Gross Profit ÷ Sales × 100 |
-| `Profit per Unit` | Unit-level value creation — Gross Profit ÷ Units |
-| `Revenue per Unit` | Pricing level indicator — Sales ÷ Units |
-| `Cost per Unit` | Manufacturing cost efficiency — Cost ÷ Units |
-| `Cost Ratio (%)` | Cost burden relative to revenue — Cost ÷ Sales × 100 |
-| `Lead Time (days)` | Logistics performance — Ship Date minus Order Date |
-| `Quadrant` | Strategic classification — Star / Cash Trap / Hidden Gem / Laggard |
-| `Margin Flag` | Risk level — Healthy / Acceptable / At Risk / Critical |
-| `Cost Structure` | Cost-Heavy/Margin-Poor, Lean-Cost/High-Margin, and two intermediate classes |
-| `Pricing Flag` | Pricing inefficiency severity — Healthy / Minor / Moderate / Severe |
-| `Recommended Action` | No Action / Repricing Needed / Cost Renegotiation / Discontinuation Review |
-| `Risk Score (0–4)` | Geographic dependency composite score across 4 binary criteria |
+| Column               | Description                                                                 |
+| -------------------- | --------------------------------------------------------------------------- |
+| `Gross Margin (%)`   | Core profitability metric — Gross Profit ÷ Sales × 100                      |
+| `Profit per Unit`    | Unit-level value creation — Gross Profit ÷ Units                            |
+| `Revenue per Unit`   | Pricing level indicator — Sales ÷ Units                                     |
+| `Cost per Unit`      | Manufacturing cost efficiency — Cost ÷ Units                                |
+| `Cost Ratio (%)`     | Cost burden relative to revenue — Cost ÷ Sales × 100                        |
+| `Lead Time (days)`   | Logistics performance — Ship Date minus Order Date                          |
+| `Quadrant`           | Strategic classification — Star / Cash Trap / Hidden Gem / Laggard          |
+| `Margin Flag`        | Risk level — Healthy / Acceptable / At Risk / Critical                      |
+| `Cost Structure`     | Cost-Heavy/Margin-Poor, Lean-Cost/High-Margin, and two intermediate classes |
+| `Pricing Flag`       | Pricing inefficiency severity — Healthy / Minor / Moderate / Severe         |
+| `Recommended Action` | No Action / Repricing Needed / Cost Renegotiation / Discontinuation Review  |
+| `Risk Score (0–4)`   | Geographic dependency composite score across 4 binary criteria              |
 
 ---
 
@@ -147,26 +149,26 @@ Quadrant = Sales >= median AND Margin >= 60%  →  ⭐ Star
          = Sales < median  AND Margin < 60%   →  🔴 Laggard
 ```
 
-| Quadrant | Products | Strategic Action |
-|---|---|---|
-| ⭐ Star | Wonka Bar Triple Dazzle, Wonka Bar Scrumdiddlyumptious, Wonka Bar Milk Chocolate, Wonka Bar Fudge Mallows, Everlasting Gobstopper | Protect and invest |
-| ⚠️ Cash Trap | Nerds, SweeTARTS, Laffy Taffy | Reprice urgently |
-| 💎 Hidden Gem | Wonka Bar Nutty Crunch Surprise, Hair Toffee | Scale with investment |
-| 🔴 Laggard | Wonka Gum, Lickable Wallpaper, Kazookles, Fizzy Lifting Drinks, Fun Dip | Rationalize |
+| Quadrant      | Products                                                                                                                          | Strategic Action      |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| ⭐ Star       | Wonka Bar Triple Dazzle, Wonka Bar Scrumdiddlyumptious, Wonka Bar Milk Chocolate, Wonka Bar Fudge Mallows, Everlasting Gobstopper | Protect and invest    |
+| ⚠️ Cash Trap  | Nerds, SweeTARTS, Laffy Taffy                                                                                                     | Reprice urgently      |
+| 💎 Hidden Gem | Wonka Bar Nutty Crunch Surprise, Hair Toffee                                                                                      | Scale with investment |
+| 🔴 Laggard    | Wonka Gum, Lickable Wallpaper, Kazookles, Fizzy Lifting Drinks, Fun Dip                                                           | Rationalize           |
 
 ---
 
 ## 🎨 Color Palette (Dark Theme)
 
-| Role | Color Name | Hex |
-|---|---|---|
-| Background | Deep Navy | `#0D1117` |
-| Card Background | Dark Card | `#161B22` |
-| Accent Orange | Vibrant | `#F97316` |
-| Accent Purple | Electric | `#A855F7` |
-| Accent Cyan | Neon | `#22D3EE` |
-| Accent Green | Mint | `#4ADE80` |
-| Accent Pink | Coral | `#FB7185` |
+| Role            | Color Name | Hex       |
+| --------------- | ---------- | --------- |
+| Background      | Deep Navy  | `#0D1117` |
+| Card Background | Dark Card  | `#161B22` |
+| Accent Orange   | Vibrant    | `#F97316` |
+| Accent Purple   | Electric   | `#A855F7` |
+| Accent Cyan     | Neon       | `#22D3EE` |
+| Accent Green    | Mint       | `#4ADE80` |
+| Accent Pink     | Coral      | `#FB7185` |
 
 ---
 
@@ -209,6 +211,4 @@ Constructive ideas help make the analysis sharper and more useful for real-world
 
 Data Science & Analytics · Streamlit · Plotly · Python
 
-*Product Profitability Analytics · Cost Structure Diagnostics · Margin Performance Strategy*
-
-
+_Product Profitability Analytics · Cost Structure Diagnostics · Margin Performance Strategy_
